@@ -1,0 +1,17 @@
+{
+    "name": "python3.14",
+    "image": "python:3.14.0b2-alpine",
+    // "image": "ghcr.io/xu-cheng/texlive-full:latest",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.black-formatter",
+        "ms-python.vscode-pylance"
+    ],
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind"
+    ],
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root"
+}
